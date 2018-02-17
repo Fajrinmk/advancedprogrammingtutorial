@@ -4,6 +4,7 @@ public abstract class Duck {
 
     private FlyBehavior flyBehavior;
     private QuackBehavior quackBehavior;
+    private SwimBehavior swimBehavior;
 
     public void performFly() {
         flyBehavior.fly();
@@ -12,6 +13,13 @@ public abstract class Duck {
     public void performQuack() {
         quackBehavior.quack();
     }
+    
+    public void swim() {
+        swimBehavior.swim();
+    }
+
+    public abstract void display();
+
 
     // TODO Complete me!
     
@@ -22,5 +30,10 @@ public abstract class Duck {
     public void setQuackBehavior(QuackBehavior quackBehavior) {
         this.quackBehavior = quackBehavior;
     }
+    
+    public void setSwimBehavior(SwimBehavior swimBehavior) {
+        this.swimBehavior = swimBehavior;
+    }
+
 
 }
