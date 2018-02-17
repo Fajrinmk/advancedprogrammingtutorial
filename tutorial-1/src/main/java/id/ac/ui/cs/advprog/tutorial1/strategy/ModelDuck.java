@@ -1,6 +1,6 @@
 package id.ac.ui.cs.advprog.tutorial1.strategy;
 
-public class ModelDuck {
+public class ModelDuck extends Duck{
 	// TODO Complete me!
 	public void ModelDuck() {
 		this.setFlyBehavior(new FlyNoWay());
