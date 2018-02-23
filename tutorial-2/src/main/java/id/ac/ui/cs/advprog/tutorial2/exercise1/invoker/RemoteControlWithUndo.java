@@ -31,14 +31,19 @@ public class RemoteControlWithUndo {
 
     public void onButtonWasPushed(int slot) {
         // TODO Complete me!
+        onCommands[slot].execute();
+        this.undoCommand = offCommands[slot];
     }
 
     public void offButtonWasPushed(int slot) {
         // TODO Complete me!
+        offCommands[slot].execute();
+        this.undoCommand = offCommands[slot];
     }
 
     public void undoButtonWasPushed() {
         // TODO Complete me!
+        this.undoCommand.undo();
     }
 
     @Override
