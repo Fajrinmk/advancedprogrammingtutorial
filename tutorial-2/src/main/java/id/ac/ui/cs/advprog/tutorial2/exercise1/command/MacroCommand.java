@@ -15,10 +15,18 @@ public class MacroCommand implements Command {
     @Override
     public void execute() {
         // TODO Complete me!
+        for (Command command: commands) {
+            command.execute();
+        }
+
     }
 
     @Override
     public void undo() {
         // TODO Complete me!
+        for (Command command: commands) {
+            command.undo();
+        }
+
     }
 }
