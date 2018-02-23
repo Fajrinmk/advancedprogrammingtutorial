@@ -20,26 +20,30 @@ public class CeilingFan {
     public void high() {
         // TODO Complete me!
         System.out.println(String.format(OUT_FMT, location, "on high"));
+        this.speed = HIGH;
     }
 
     public void medium() {
         // TODO Complete me!
         System.out.println(String.format(OUT_FMT, location, "on medium"));
+        this.speed = MEDIUM;
     }
 
     public void low() {
         // TODO Complete me!
         System.out.println(String.format(OUT_FMT, location, "on low"));
+        this.speed = LOW;
     }
 
     public void off() {
         // TODO Complete me!
         System.out.println(String.format(OUT_FMT, location, "off"));
+        this.speed = OFF;
     }
 
     public String getLocation() {
         // TODO Complete me!
-        return "";
+        return location;
     }
 
     public int getSpeed() {
