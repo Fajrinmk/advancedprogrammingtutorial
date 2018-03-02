@@ -17,12 +17,12 @@ public class Company {
 
     public void addEmployee(Employees employees) {
         //TODO Implement
-    	this.employeesList.add(employees);
+        this.employeesList.add(employees);
     }
 
     public double getNetSalaries() {
         //TODO Implement
-    	double netSalaries = 0;
+        double netSalaries = 0;
         for (Employees employee: employeesList) {
             netSalaries += employee.getSalary();
         }
@@ -32,6 +32,6 @@ public class Company {
 
     public List<Employees> getAllEmployees() {
         //TODO Implement
-    	return this.employeesList;
+        return this.employeesList;
     }
 }
