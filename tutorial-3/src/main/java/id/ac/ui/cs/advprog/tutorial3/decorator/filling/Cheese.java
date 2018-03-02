@@ -13,7 +13,7 @@ public class Cheese extends Filling{
     @Override
     public String getDescription() {
         //TODO Implement
-    	return food.getDescription() + ", adding adding cheese";
+    	return food.getDescription() + ", adding cheese";
     }
 
     @Override
