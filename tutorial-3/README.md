@@ -179,5 +179,5 @@ tasks
 
 ## My Notes
 
-1. Di decorator pattern kita melakukan proses wrapping, suatu class mereference ke class diatasnya untuk menghitung biaya.
-2. Di composite, secara hierarki CEO dan Security Expert satu level, karena sama-sama subclass employee, namun di dalam pattern ini dibagi bagaikan sebuah tree. dibagi dalam 2 class yaitu higherups dan techexpert, lalu didalam folder itu terdapat cabang lagi.
+> 1. Di decorator pattern kita melakukan proses wrapping, suatu class mereference ke class diatasnya untuk menghitung biaya.
+> 2. Di composite, secara hierarki CEO dan Security Expert satu level, karena sama-sama subclass employee, namun di dalam pattern ini dibagi bagaikan sebuah tree. dibagi dalam 2 class yaitu higherups dan techexpert, lalu didalam folder itu terdapat cabang lagi.
