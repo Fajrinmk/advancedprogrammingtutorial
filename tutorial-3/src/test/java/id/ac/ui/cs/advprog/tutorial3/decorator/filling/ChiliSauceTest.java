@@ -2,6 +2,9 @@ package id.ac.ui.cs.advprog.tutorial3.decorator.filling;
 
 import static org.junit.Assert.assertEquals;
 
+import id.ac.ui.cs.advprog.tutorial3.decorator.bread.*;
+import id.ac.ui.cs.advprog.tutorial3.decorator.filling.*;
+
 import org.junit.Before;
 import org.junit.Test;
 

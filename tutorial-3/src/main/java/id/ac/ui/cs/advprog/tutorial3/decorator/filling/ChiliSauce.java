@@ -2,10 +2,10 @@ package id.ac.ui.cs.advprog.tutorial3.decorator.filling;
 
 import id.ac.ui.cs.advprog.tutorial3.decorator.Food;
 
-public class BeefMeat extends Filling {
-    Food food;
+public class ChiliSauce extends Filling {
+	Food food;
 
-    public BeefMeat(Food food) {
+    public ChiliSauce(Food food) {
         //TODO Implement
     	this.food = food;
     }
@@ -13,12 +13,12 @@ public class BeefMeat extends Filling {
     @Override
     public String getDescription() {
         //TODO Implement
-    	return food.getDescription() + ", adding beef meat";
+    	return food.getDescription() + ", adding chili sauce";
     }
 
     @Override
     public double cost() {
         //TODO Implement
-    	return food.cost() + 7.00;
+    	return food.cost() + 2.80;
     }
 }
