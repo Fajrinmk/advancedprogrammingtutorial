@@ -19,6 +19,6 @@ public class BeefMeat extends Filling {
     @Override
     public double cost() {
         //TODO Implement
-    	return food.cost() + 7.00;
+    	return food.cost() + 6.00;
     }
 }

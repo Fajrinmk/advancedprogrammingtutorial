@@ -19,6 +19,6 @@ public class Cucumber extends Filling{
     @Override
     public double cost() {
         //TODO Implement
-    	return food.cost() + 1.40;
+    	return food.cost() + 0.40;
     }
 }

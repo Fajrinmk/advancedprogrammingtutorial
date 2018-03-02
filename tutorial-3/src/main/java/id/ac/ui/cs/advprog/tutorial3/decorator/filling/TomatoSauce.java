@@ -19,6 +19,6 @@ public class TomatoSauce extends Filling{
     @Override
     public double cost() {
         //TODO Implement
-    	return food.cost() + 1.70;
+    	return food.cost() + 0.2;
     }
 }

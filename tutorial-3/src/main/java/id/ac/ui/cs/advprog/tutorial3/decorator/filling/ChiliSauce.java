@@ -19,6 +19,6 @@ public class ChiliSauce extends Filling {
     @Override
     public double cost() {
         //TODO Implement
-    	return food.cost() + 2.80;
+    	return food.cost() + 0.30;
     }
 }

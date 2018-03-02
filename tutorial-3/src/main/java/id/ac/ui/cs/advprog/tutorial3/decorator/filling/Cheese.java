@@ -19,6 +19,6 @@ public class Cheese extends Filling{
     @Override
     public double cost() {
         //TODO Implement
-    	return food.cost() + 4.00;
+    	return food.cost() + 2.00;
     }
 }
