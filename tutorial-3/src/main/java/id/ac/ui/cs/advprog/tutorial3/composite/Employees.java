@@ -1,7 +1,7 @@
 package id.ac.ui.cs.advprog.tutorial3.composite;
 
 public abstract class Employees {
-	protected String name;
+    protected String name;
     protected double salary;
     protected String role;
     
