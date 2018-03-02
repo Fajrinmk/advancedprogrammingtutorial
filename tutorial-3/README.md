@@ -179,6 +179,5 @@ tasks
 
 ## My Notes
 
-> Feel free to use this section to write your own notes related to your attempt
-> in doing the tutorial. You can also use this section to write text for
-> answering question(s) mentioned in the task checklists.
+1. Di decorator pattern kita melakukan proses wrapping, suatu class mereference ke class diatasnya untuk menghitung biaya.
+2. Di composite, secara hierarki CEO dan Security Expert satu level, karena sama-sama subclass employee, namun di dalam pattern ini dibagi bagaikan sebuah tree. dibagi dalam 2 class yaitu higherups dan techexpert, lalu didalam folder itu terdapat cabang lagi.
