@@ -3,14 +3,14 @@ package id.ac.ui.cs.advprog.tutorial3.decorator.bread;
 import id.ac.ui.cs.advprog.tutorial3.decorator.Food;
 
 public class ThinBunBurger extends Food{
-	public ThinBunBurger() {
+    public ThinBunBurger() {
         //TODO Implement
-		this.description = "Thin Bun Burger";
+        this.description = "Thin Bun Burger";
     }
 
     @Override
     public double cost() {
         //TODO Implement
-    	return 1.50;
+        return 1.50;
     }
 }
