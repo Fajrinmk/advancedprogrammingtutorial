@@ -2,8 +2,8 @@ package id.ac.ui.cs.advprog.tutorial3.composite;
 
 import static org.junit.Assert.assertEquals;
 
-import id.ac.ui.cs.advprog.tutorial3.composite.higherups.Ceo;
-import id.ac.ui.cs.advprog.tutorial3.composite.techexpert.BackendProgrammer;
+import id.ac.ui.cs.advprog.tutorial3.composite.higherups.*;
+import id.ac.ui.cs.advprog.tutorial3.composite.techexpert.*;
 
 import java.util.List;
 import org.junit.Before;
