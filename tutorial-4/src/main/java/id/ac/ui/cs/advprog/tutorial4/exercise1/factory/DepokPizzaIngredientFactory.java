@@ -8,12 +8,16 @@ import id.ac.ui.cs.advprog.tutorial4.exercise1.factory.dough.Dough;
 import id.ac.ui.cs.advprog.tutorial4.exercise1.factory.dough.NoCrustDough;
 import id.ac.ui.cs.advprog.tutorial4.exercise1.factory.sauce.ChilliSauce;
 import id.ac.ui.cs.advprog.tutorial4.exercise1.factory.sauce.Sauce;
-import id.ac.ui.cs.advprog.tutorial4.exercise1.factory.veggies.*;
+import id.ac.ui.cs.advprog.tutorial4.exercise1.factory.veggies.BlackOlives;
+import id.ac.ui.cs.advprog.tutorial4.exercise1.factory.veggies.Eggplant;
+import id.ac.ui.cs.advprog.tutorial4.exercise1.factory.veggies.Spinach;
+import id.ac.ui.cs.advprog.tutorial4.exercise1.factory.veggies.Tomato;
+import id.ac.ui.cs.advprog.tutorial4.exercise1.factory.veggies.Veggies;
 
 
 public class DepokPizzaIngredientFactory implements PizzaIngredientFactory {
     
-	@Override
+    @Override
     public Dough createDough() {
         return new NoCrustDough();
     }

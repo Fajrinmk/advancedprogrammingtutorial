@@ -8,9 +8,9 @@ import id.ac.ui.cs.advprog.tutorial4.exercise1.pizza.Pizza;
 import id.ac.ui.cs.advprog.tutorial4.exercise1.pizza.VeggiePizza;
 
 
-public class DepokPizzaStore extends PizzaStore{
+public class DepokPizzaStore extends PizzaStore {
     
-	@Override
+    @Override
     protected Pizza createPizza(String item) {
         Pizza pizza = null;
         PizzaIngredientFactory ingredientFactory =
