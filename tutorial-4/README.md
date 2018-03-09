@@ -163,7 +163,7 @@ a Singleton object and describe the pros/cons of both approaches
 > answering question(s) mentioned in the task checklists.
 
 Eager pros
- - it always checks is the instance is available or not
+ - it always checks if the instance is available or not
  - it never checks nullity
 
 Eager cons
