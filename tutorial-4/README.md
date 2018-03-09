@@ -129,30 +129,30 @@ gradle :tutorial-4:checkstyleMain
 
 - [X] Make at least 1 commit that contains your progress in completing
 Abstract Factory pattern
-- [ ] Make at least 1 commit that contains your progress in completing
+- [X] Make at least 1 commit that contains your progress in completing
 Singleton pattern
-- [ ] Push your commits to online Git repository on your GitLab project
-- [ ] Create a new ingredient class in `cheese`, `clam`, `dough`, `sauce`,
+- [X] Push your commits to online Git repository on your GitLab project
+- [X] Create a new ingredient class in `cheese`, `clam`, `dough`, `sauce`,
 and `veggies` package
-- [ ] Create a new `DepokPizzaIngredientFactory` class and implement it
+- [X] Create a new `DepokPizzaIngredientFactory` class and implement it
 correctly by following specifications described above
-- [ ] Create a new `DepokPizzaStore` class and implement it correctly by
+- [X] Create a new `DepokPizzaStore` class and implement it correctly by
 following specifications described above
-- [ ] Implement `Singleton` class correctly
-- [ ] Pass all tests related to Singleton class
+- [X] Implement `Singleton` class correctly
+- [X] Pass all tests related to Singleton class
 
 ## Additional Tasks Checklist
 
-- [ ] Make sure there are no code style issues, i.e. Checkstyle did not
+- [X] Make sure there are no code style issues, i.e. Checkstyle did not
 produce any warning when you execute `check` or `checkstyleMain` Gradle
 tasks
-- [ ] Create several JUnit 4-based unit test classes (and the test cases,
+- [X] Create several JUnit 4-based unit test classes (and the test cases,
 obviously) **that cover at least 50% lines of code** in `exercise1` package
     - Hint: Please see unit tests in 1st and 3rd tutorial to see the overall
     structure of developing JUnit 4-based unit tests
     - You can check the code coverage using your IDE, e.g. in IntelliJ, you can
     right-click the test package and choose *Run All Tests with Coverage*
-- [ ] Compare lazy-instantiation and eager-instantiation approach in instantiating
+- [X] Compare lazy-instantiation and eager-instantiation approach in instantiating
 a Singleton object and describe the pros/cons of both approaches
     - Write your answer in [My Notes](#my-notes) section in this document
 
