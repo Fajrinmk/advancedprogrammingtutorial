@@ -161,3 +161,21 @@ a Singleton object and describe the pros/cons of both approaches
 > Feel free to use this section to write your own notes related to your attempt
 > in doing the tutorial. You can also use this section to write text for
 > answering question(s) mentioned in the task checklists.
+
+Eager pros
+ - it always checks is the instance is available or not
+ - it never checks nullity
+
+Eager cons
+ - it wastes a lot of resources, especially sometimes we don't need this method
+
+Lazy Pros
+
+ - it can tell if an instance is already created or not
+ - it only creates an instance when needed, this saves a lot of resources
+
+Lazy Cons
+
+ - it checks the nullity of an instance for every each call
+
+  
