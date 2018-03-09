@@ -129,7 +129,7 @@ gradle :tutorial-4:checkstyleMain
 
 - [ ] Make at least 1 commit that contains your progress in completing
 Abstract Factory pattern
-- [v] Make at least 1 commit that contains your progress in completing
+- [ ] Make at least 1 commit that contains your progress in completing
 Singleton pattern
 - [ ] Push your commits to online Git repository on your GitLab project
 - [ ] Create a new ingredient class in `cheese`, `clam`, `dough`, `sauce`,
