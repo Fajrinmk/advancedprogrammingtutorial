@@ -5,6 +5,17 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 </head>
 <body>
-    <p th:text="'Hello, ' + ${name} + '!'" />
+    <section th:if="${name} ne ''">
+    	<p th:text="${name} + ', I hope you will be interested to hire me.'"/>
+	</section>
+
+	<section th:if="${name} eq ''">
+    	<p>This is my CV.</p>
+	</section>
+
+	<section th:each="cv: ${cv}">
+    	<tr th:text="${{cv}}"/>
+	</section>
+
 </body>
 </html>
