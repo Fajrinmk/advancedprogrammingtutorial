@@ -1,3 +1,4 @@
+
 # Tutorial 5: Model-View-Controller
 
 CSCM602023 Advanced Programming @ Faculty of Computer Science Universitas
@@ -159,32 +160,32 @@ gradle :tutorial-5:checkstyleMain
 
 ## Mandatory Tasks Checklist
 
-- [ ] Make at least 1 commit that contains your progress in completing
+- [X] Make at least 1 commit that contains your progress in completing
 the tutorial
-- [ ] Push your commits to online Git repository on your GitLab project
-- [ ] Implement the Requested Feature of Creating a `CV Page` as requested
-- [ ] Create several JUnit 4-based unit test classes (and the test cases,
+- [X] Push your commits to online Git repository on your GitLab project
+- [X] Implement the Requested Feature of Creating a `CV Page` as requested
+- [X] Create several JUnit 4-based unit test classes (and the test cases,
       obviously)
-- [ ] Pass all the created test
+- [X] Pass all the created test
 
 ## Additional Tasks Checklist
 
-- [ ] Make sure there are no code style issues, i.e. Checkstyle did not
+- [X] Make sure there are no code style issues, i.e. Checkstyle did not
 produce any warning when you execute `check` or `checkstyleMain` Gradle
 tasks
-- [ ] Make sure that you have 100% Code Coverage
-- [ ] Unit Tests that are created must have a good quality (Min 1 Positive and Negative
+- [X] Make sure that you have 100% Code Coverage
+- [X] Unit Tests that are created must have a good quality (Min 1 Positive and Negative
 Test Case per Function that you wanna test)
-- [ ] Explain in several paragraphs Why Spring Boot can be used as an example 
+- [X] Explain in several paragraphs Why Spring Boot can be used as an example 
 for Model-View-Controller Pattern
     - Explain what is Model-View-Controller Pattern in 1 sentence
     - Where is Model, View, and Controller in Spring Boot Framework
     - Write your answer in [My Notes](#my-notes) section in this document
 
-## More Challange
+## More Challenge
 
-This tutorial must be really simple for some people, that's why we want to challange
-those who really eager to learn. Hre's some stuff you can try:
+This tutorial must be really simple for some people, that's why we want to challenge
+those who really eager to learn. Here's some stuff you can try:
 
 1. Database Usage using Spring Boot (You can start by combining your work by
 implementing a `To-Do List feature` in your work). You can see the example with using MySQL
@@ -196,3 +197,11 @@ Database [Here](https://github.com/spring-guides/gs-accessing-data-mysql)
 > Feel free to use this section to write your own notes related to your attempt
 > in doing the tutorial. You can also use this section to write text for
 > answering question(s) mentioned in the task checklists.
+   
+ -  MVC is a software pattern that separates domain/application/business
+   logic from the rest of the user interface.
+  
+ - Model: RequestParam annotation
+ - Controller: in this case, the controller is the GreetingController class
+ - View: the html file
+ - Spring is a framework that implements MVC pattern, it provides the MVC structure where we as a developer can use it easily because it already handles all the structural work.
