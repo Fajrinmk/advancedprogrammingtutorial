@@ -46,5 +46,13 @@ public class ApplicationTest {
         mockMvc.perform(get("/greeting").param("name", "Greg"))
                 .andExpect(content().string(containsString("Greg, I hope you will be interested to hire me.")));
     }
+    
+    @Test
+    public void greetingWithoutUser() throws Exception {
+        mockMvc.perform(get("/greeting").param("name", ""))
+                .andExpect(content()
+                        .string(containsString("This is my CV.")));
+    }
 
+    
 }
