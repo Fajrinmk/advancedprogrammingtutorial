@@ -44,7 +44,7 @@ public class ApplicationTest {
     @Test
     public void greetingWithUser() throws Exception {
         mockMvc.perform(get("/greeting").param("name", "Greg"))
-                .andExpect(content().string(containsString("Hello, Greg!")));
+                .andExpect(content().string(containsString("Greg, I hope you will be interested to hire me.")));
     }
 
 }
