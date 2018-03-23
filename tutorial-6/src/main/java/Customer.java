@@ -31,7 +31,7 @@ class Customer {
             double thisAmount = 0;
 
             // Determine amount for each line
-            thisAmount = each.lineAmount(thisAmount);
+            totalAmount = each.lineAmount(thisAmount);
 
             // Add frequent renter points
             frequentRenterPoints = each.addRenterPoints(frequentRenterPoints);

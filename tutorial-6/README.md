@@ -129,8 +129,8 @@ gradle :tutorial-6:checkstyleTest
 
 ## Mandatory Tasks Checklist
 
-- [ ] Refactor `statement()` method in `Customer` class
-- [ ] Make at least 3 commits that contains your progress in refactoring
+- [X] Refactor `statement()` method in `Customer` class
+- [X] Make at least 3 commits that contains your progress in refactoring
 `statement()` method in `Customer` class
 - [ ] Refactor test classes
 - [ ] Make at least 1 commit that contains your progress in refactoring
