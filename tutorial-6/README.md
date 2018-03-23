@@ -140,12 +140,12 @@ test classes
 
 ## Additional Tasks Checklist
 
-- [ ] Make sure there are no code style issues, both in production code and
+- [X] Make sure there are no code style issues, both in production code and
 test code
 - [X] Implement `htmlStatement()` method in `Customer` class
 - [X] Create tests for testing `htmlStatement()` method using JUnit 4
 - [X] Ensure 100% code coverage
-- [ ] Reflect on the refactoring activities that you have done and answer the
+- [X] Reflect on the refactoring activities that you have done and answer the
 following questions:
     - What are the benefits of refactoring based on your observation?
     - What are the bad qualities observed in the code if we did not refactor
@@ -160,3 +160,9 @@ following questions:
 > Feel free to use this section to write your own notes related to your attempt
 > in doing the tutorial. You can also use this section to write text for
 > answering question(s) mentioned in the task checklists.
+
+Benefits:
+high cohession, low coupling. The program will be a lot easier to maintain
+Bad quality:
+The method statement() holds to much responsibility, low cohession
+
