@@ -16,8 +16,8 @@ class Rental {
         return daysRented;
     }
 
-	double lineAmount() {
-		double thisAmount = 0.0;
+    double lineAmount() {
+        double thisAmount = 0.0;
         switch (getMovie().getPriceCode()) {
             case Movie.REGULAR:
                 thisAmount += 2;
@@ -39,11 +39,11 @@ class Rental {
         }
         return thisAmount;
 
-	}
+    }
 
-	int addRenterPoints() {
-	
-		// Add bonus for a two day new release rental
-		return (getMovie().getPriceCode() == Movie.NEW_RELEASE) && (getDaysRented() > 1) ? 2 : 1;
-	}
+    int addRenterPoints() {
+    
+        // Add bonus for a two day new release rental
+        return (getMovie().getPriceCode() == Movie.NEW_RELEASE) && (getDaysRented() > 1) ? 2 : 1;
+    }
 }
