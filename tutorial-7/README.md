@@ -141,7 +141,7 @@ gradle :tutorial-7:jacocoTestReport
 
 - [ ] Make sure that you have at least 1 commit for each exercises that contain
 changes to the code after refactoring
-- [ ] Complete 1st exercise
+- [X] Complete 1st exercise
 - [ ] Complete 2nd exercise
 - [ ] Complete 3rd exercise
 - [ ] Complete 4th exercise
