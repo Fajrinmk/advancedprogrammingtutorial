@@ -139,14 +139,14 @@ gradle :tutorial-7:jacocoTestReport
 
 ## Mandatory Tasks Checklist
 
-- [ ] Make sure that you have at least 1 commit for each exercises that contain
+- [X] Make sure that you have at least 1 commit for each exercises that contain
 changes to the code after refactoring
 - [X] Complete 1st exercise
 - [X] Complete 2nd exercise
 - [X] Complete 3rd exercise
-- [ ] Complete 4th exercise
-- [ ] Ensure the tests still pass after each refactoring
-- [ ] Push your commits to online Git repository on your GitLab project
+- [X] Complete 4th exercise
+- [X] Ensure the tests still pass after each refactoring
+- [X] Push your commits to online Git repository on your GitLab project
 
 ## Additional Tasks Checklist
 
