@@ -152,7 +152,7 @@ changes to the code after refactoring
 
 - [X] Make sure there are no code style issues, both in production code and
 test code
-- [ ] Ensure 100% code coverage on all methods except `main` method after all
+- [X] Ensure 100% code coverage on all methods except `main` method after all
 code has been refactored
 - [ ] Compare the number of LOC before and after refactoring and provide
 a short analysis on the result
