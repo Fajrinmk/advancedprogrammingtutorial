@@ -150,7 +150,7 @@ changes to the code after refactoring
 
 ## Additional Tasks Checklist
 
-- [ ] Make sure there are no code style issues, both in production code and
+- [X] Make sure there are no code style issues, both in production code and
 test code
 - [ ] Ensure 100% code coverage on all methods except `main` method after all
 code has been refactored

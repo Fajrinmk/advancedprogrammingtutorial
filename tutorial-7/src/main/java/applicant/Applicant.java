@@ -39,13 +39,16 @@ public class Applicant {
 
         Predicate<Applicant> qualifiedEvaluator = Applicant::isCredible;
         Predicate<Applicant> creditCheck = theApplicant -> theApplicant.getCreditScore() > 600;
-        Predicate<Applicant> employmentCheck = theApplicant -> theApplicant.getEmploymentYears() > 0;
+        Predicate<Applicant> employmentCheck = theApplicant -> 
+            theApplicant.getEmploymentYears() > 0;
         Predicate<Applicant> crimeCheck = theApplicant -> !theApplicant.hasCriminalRecord();
 
         printEvaluation(evaluate(applicant, qualifiedEvaluator.and(creditCheck)));
         printEvaluation(evaluate(applicant, qualifiedEvaluator.and(employmentCheck)));
-        printEvaluation(evaluate(applicant, qualifiedEvaluator.and(employmentCheck).and(crimeCheck)));
-        printEvaluation(evaluate(applicant, qualifiedEvaluator.and(employmentCheck).and(creditCheck).and(crimeCheck)));
+        printEvaluation(evaluate(applicant, 
+                qualifiedEvaluator.and(employmentCheck).and(crimeCheck)));
+        printEvaluation(evaluate(applicant, 
+                qualifiedEvaluator.and(employmentCheck).and(creditCheck).and(crimeCheck)));
 
     }
 }
