@@ -180,14 +180,19 @@ for the template code that he created in `Fraction` and `Main` class in Package 
 
 **Question:**
 Explain in your `My Notes` Section in this README, why at the first template code, the initial Tally Counter cannot have the exact number of ordered ticket (Relate it to the declaration of `c++` and `c--`)
- **Answer:**
- The c++ method is called in multiple threads, two threads can read a value simultaneously, and it affects both value that they increment and write. So the counter will return a lower value than it should be
+
+**Answer:**
+The c++ method is called in multiple threads, two threads can read a value simultaneously, and it affects both value that they increment and write. So the counter will return a lower value than it should be
+ 
 **Question:**
 Implement the new `TallyCounter` version (e.g. `SynchronizedTallyCounter`) using Java `Synchronized` and explain why it can be the solution of this particular concurrency problem
- **Answer:**
- -  First, it is not possible for two invocations of synchronized methods on the same object to interleave. When one thread is executing a synchronized method for an object, all other threads that invoke synchronized methods for the same object block (suspend execution) until the first thread is done with the object.
+
+**Answer:**
+-  First, it is not possible for two invocations of synchronized methods on the same object to interleave. When one thread is executing a synchronized method for an object, all other threads that invoke synchronized methods for the same object block (suspend execution) until the first thread is done with the object.
 -   Second, when a synchronized method exits, it automatically establishes a happens-before relationship with  _any subsequent invocation_  of a synchronized method for the same object. This guarantees that changes to the state of the object are visible to all threads.
+
 **Question:**
- Implement the new `TallyCounter` version (e.g. `AtomicTallyCounter`) using `AtomicInteger` and explain why it can be the solution of this particular concurrency  problem
-  **Answer:**
-  AtomicInteger class provides operations on underlying int value that can be read and written atomically, and also contains advanced atomic operations. AtomicInteger supports atomic operations on underlying int variable. It have get and set methods that work like reads and writes on volatile variables. That is, a set has a happens-before relationship with any subsequent get on the same variable. The atomic compareAndSet method also has these memory consistency features.
+Implement the new `TallyCounter` version (e.g. `AtomicTallyCounter`) using `AtomicInteger` and explain why it can be the solution of this particular concurrency  problem
+
+**Answer:**
+ AtomicInteger class provides operations on underlying int value that can be read and written atomically, and also contains advanced atomic operations. AtomicInteger supports atomic operations on underlying int variable. It have get and set methods that work like reads and writes on volatile variables. That is, a set has a happens-before relationship with any subsequent get on the same variable. The atomic compareAndSet method also has these memory consistency features.
