@@ -2,15 +2,25 @@ package tallycounter;
 
 public class OnlineTicketShow implements Runnable {
 
-    private TallyCounter tallyCounterReference;
+    private AtomicTallyCounter atomicTallyCounterReference;
+    private volatile SynchronizedTallyCounter synchronizedTallyCounterReference;
     private Thread thread;
     private int maxTicketOrdered;
     private String websiteName;
     private int buyingRateinMiliSecond;
 
-    public OnlineTicketShow(String websiteName, TallyCounter tallyCounterReference,
+    public OnlineTicketShow(String websiteName, AtomicTallyCounter atomicTallyCounterReference,
                                  int maxTicketOrdered, int buyingRateinMiliSecond) {
-        this.tallyCounterReference = tallyCounterReference;
+        this.atomicTallyCounterReference = atomicTallyCounterReference;
+        this.maxTicketOrdered = maxTicketOrdered;
+        this.websiteName = websiteName;
+        this.buyingRateinMiliSecond = buyingRateinMiliSecond;
+    }
+
+    public OnlineTicketShow(String websiteName,
+                            SynchronizedTallyCounter synchronizedTallyCounterReference,
+                            int maxTicketOrdered, int buyingRateinMiliSecond) {
+        this.synchronizedTallyCounterReference = synchronizedTallyCounterReference;
         this.maxTicketOrdered = maxTicketOrdered;
         this.websiteName = websiteName;
         this.buyingRateinMiliSecond = buyingRateinMiliSecond;
@@ -33,11 +43,20 @@ public class OnlineTicketShow implements Runnable {
                         + ", have sold" + (maxTicketOrdered - i + 1));
                 // Let the thread sleep for a while.
                 Thread.sleep(buyingRateinMiliSecond);
-                tallyCounterReference.increment();
+                if (checkType()) {
+                    atomicTallyCounterReference.increment();
+                } else {
+                    synchronizedTallyCounterReference.increment();
+                }
             }
         } catch (InterruptedException e) {
             System.out.println("Website " + websiteName + " interrupted.");
         }
+
         System.out.println("Website " + websiteName + " closed.");
+    }
+
+    private boolean checkType() {
+        return atomicTallyCounterReference != null ? true : false;
     }
 }
