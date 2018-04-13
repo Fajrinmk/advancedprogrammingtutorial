@@ -1,3 +1,4 @@
+
 # Tutorial 8: Concurrency
 
 CSCM602023 Advanced Programming @ Faculty of Computer Science Universitas
@@ -146,24 +147,21 @@ gradle :tutorial-8:jacocoTestReport
 
 ## Mandatory Tasks Checklist
 
-- [ ] Make sure that you have at least 1 commit for each exercises that contain
+- [X] Make sure that you have at least 1 commit for each exercises that contain
 changes to the code after refactoring
-- [ ] Explain in your `My Notes` Section in this README, why at the first template code,
+- [X] Explain in your `My Notes` Section in this README, why at the first template code,
 the initial Tally Counter cannot have the exact number of ordered ticket (Relate it to
 the declaration of `c++` and `c--`)
-- [ ] Implement the new `TallyCounter` version (e.g. `AtomicTallyCounter`) using 
-`AtomicInteger` and explain why it can be the solution of this particular concurrency 
-problem
-- [ ] Implement the new `TallyCounter` version (e.g. `SynchronizedTallyCounter`) using Java
-`Synchronized` and explain why it can be the solution of this particular concurrency 
-problem
-- [ ] Push your commits to online Git repository on your GitLab project
+- [X] Implement the new `TallyCounter` version (e.g. `AtomicTallyCounter`) using `AtomicInteger` and explain why it can be the solution of this particular concurrency  problem
+- [X] Implement the new `TallyCounter` version (e.g. `SynchronizedTallyCounter`) using Java
+`Synchronized` and explain why it can be the solution of this particular concurrency  problem
+- [X] Push your commits to online Git repository on your GitLab project
 
 ## Additional Tasks Checklist
 
-- [ ] Make sure there are no code style issues, both in production code and
+- [X] Make sure there are no code style issues, both in production code and
 test code
-- [ ] Implementing the feature as requested in the Description
+- [X] Implementing the feature as requested in the Description
 - [ ] Write a several sentence or paragraph about the additional task
     - Can you implement the new quiz rule without any concurrency? Explain Why?
     - Can you implement the new feature with using at minimum 1 Thread? Explain Why?
@@ -179,3 +177,17 @@ for the template code that he created in `Fraction` and `Main` class in Package 
 > Feel free to use this section to write your own notes related to your attempt
 > in doing the tutorial. You can also use this section to write text for
 > answering question(s) mentioned in the task checklists.
+
+**Question:**
+Explain in your `My Notes` Section in this README, why at the first template code, the initial Tally Counter cannot have the exact number of ordered ticket (Relate it to the declaration of `c++` and `c--`)
+ **Answer:**
+ The c++ method is called in multiple threads, two threads can read a value simultaneously, and it affects both value that they increment and write. So the counter will return a lower value than it should be
+**Question:**
+Implement the new `TallyCounter` version (e.g. `SynchronizedTallyCounter`) using Java `Synchronized` and explain why it can be the solution of this particular concurrency problem
+ **Answer:**
+ -  First, it is not possible for two invocations of synchronized methods on the same object to interleave. When one thread is executing a synchronized method for an object, all other threads that invoke synchronized methods for the same object block (suspend execution) until the first thread is done with the object.
+-   Second, when a synchronized method exits, it automatically establishes a happens-before relationship with  _any subsequent invocation_  of a synchronized method for the same object. This guarantees that changes to the state of the object are visible to all threads.
+**Question:**
+ Implement the new `TallyCounter` version (e.g. `AtomicTallyCounter`) using `AtomicInteger` and explain why it can be the solution of this particular concurrency  problem
+  **Answer:**
+  AtomicInteger class provides operations on underlying int value that can be read and written atomically, and also contains advanced atomic operations. AtomicInteger supports atomic operations on underlying int variable. It have get and set methods that work like reads and writes on volatile variables. That is, a set has a happens-before relationship with any subsequent get on the same variable. The atomic compareAndSet method also has these memory consistency features.
